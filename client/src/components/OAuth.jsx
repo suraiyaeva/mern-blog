@@ -2,9 +2,9 @@ import { Button } from "flowbite-react";
 import React from "react";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { app } from "../firebase";
+import { app } from "../firebase.js";
 import { useDispatch } from "react-redux";
-import { signInSuccess } from "../redux/user/userSlice";
+import { signInSuccess } from "../redux/user/userSlice.js";
 import { useNavigate } from "react-router-dom";
 
 export default function OAuth() {
